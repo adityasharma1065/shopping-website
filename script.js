@@ -353,6 +353,8 @@ document.addEventListener("click",(val)=>{
               </div>
           </div>
           <div id="quan">
+
+              <h3>Price - $${elem.price}</h3>
               <h3>Quantity - ${elem.quantity}</h3>
               <i class="ri-delete-bin-6-line" data-id="${elem.id-1}"></i>
           </div>
@@ -390,6 +392,7 @@ cartpg.addEventListener("click",(val)=>{
               </div>
           </div>
           <div id="quan">
+          <h3>Price - $${elem.price}</h3>
               <h3>Quantity - ${elem.quantity}</h3>
               <i class="ri-delete-bin-6-line" data-id="${elem.id-1}"></i>
           </div>
