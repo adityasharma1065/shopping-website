@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+i{
+    font-size: 3vh;
+    transition: all ease 0.3s;
+}
+#nav h1{
+margin-left: 45%;
+}
+i:hover{
+    scale: 1.2;
+}
+#window{
+    height: 90vh;
+    width: 100%;
+    background-color: #474747;
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding: 40px;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.card{
+    flex-shrink: 0;
+    height: 50vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card h3{
+    width: 80%;
+    /* overflow:auto ; */
+    /* background-color: red; */
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card img{
+    height: 20vh;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.card button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-weight: 500;
+}
+#side {
+display: flex;
+gap: 15px;
+}
+#side button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#slide{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 100%;
+    /* transform: translateX(00%); */
+    padding: 50px;
+    transition: all ease 0.3s;
+}
+#slide h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#slide h5{
+    margin-bottom: 10px;
+    transition: all ease 0.3s;
+    color: #474747;
+    /* background-color: #d0d0d0; */
+}
+#slide h5:hover{
+     transform: translate(2%,-5%);
+}
+#slide i{
+    position: absolute;
+    font-size: 30px;
+    right: 40px;
+}
+#cart{
+    height: 100%;
+    width: 100%;
+    background-color: #474747;
+    position: absolute;
+    top: 0;
+    scale: 0;
+    /* padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; */
+    transition: all ease 0.3s;
+}
+#cartitem{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow-y: auto;
+}
+#cart button{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+}
+.cartcd{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    justify-content: space-between;
+    /* gap: 80px; */
+    border-radius: 15px;
+    background-color: #fff;
+}
+#des1 img{
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+#quan{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 80px;
+}
+#des1{
+    height: 100%;
+    width: 70% ;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 80px;
+}
+#des2 h6{
+    width: 80%;
+}
+#empty{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#carticon{
+    position: relative;
+}
+#reddot{
+     
+     position: absolute;
+     height: 8px;
+     width: 8px;
+     background-color: transparent;
+     border-radius: 50%;
+     top: 0;
+     right: 0;
+     /* transform: translateX(-50%); */
+}
+#addbtn{
+    transition: all ease 0.2s;
+}
+#addbtn:active{
+    scale: 0.95;
+}
